@@ -35,7 +35,7 @@ export default async function Header() {
             hasMobileMenu
             className="flex"
           />
-          <CheckOut className="ml-4" productPath={"/services"} />
+          <CheckOut className="ml-4" />
         </div>
       </div>
     </nav>

@@ -27,7 +27,7 @@ export function CheckOut({
   productPath,
 }: {
   className?: string;
-  productPath: string;
+  productPath?: string;
 }) {
   const [submitting, setSubmitting] = useState(false);
   const { cart, setCart, cartOpen, setCartOpen } = useContext(CartContext);
@@ -51,7 +51,7 @@ export function CheckOut({
     return (
       <div className="flex my-4 gap-4">
         <div>
-          <Link href={`${productPath}/${item.slug}`}>
+          <Link href={productPath ? `${productPath}/${item.slug}` : "#"}>
             <img
               src={`${item.metadata.image.imgix_url}?w=300&auto=format,compression`}
               className="w-[100px] h-[100px] rounded-xl object-cover"
@@ -61,7 +61,9 @@ export function CheckOut({
         </div>
         <div>
           <div className="mb-1 text-lg">
-            <Link href={`${productPath}/${item.slug}`}>{item.title}</Link>
+            <Link href={productPath ? `${productPath}/${item.slug}` : "#"}>
+              {item.title}
+            </Link>
           </div>
           <div className="mb-2 text-lg">
             ${item.metadata.price.toLocaleString("en-US")}

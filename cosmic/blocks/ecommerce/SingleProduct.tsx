@@ -43,7 +43,7 @@ export async function SingleProduct({
               <li>
                 <div className="flex items-center">
                   <Link
-                    href="/services"
+                    href="/"
                     className="mr-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Services

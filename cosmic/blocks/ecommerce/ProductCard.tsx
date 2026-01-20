@@ -24,7 +24,7 @@ export function ProductCard({
 }) {
   return (
     <Link
-      href={`/services/${product.slug}`}
+      href="#"
       className={cn("group relative", className)}
     >
       <div className="h-52 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">

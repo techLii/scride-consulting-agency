@@ -3,11 +3,10 @@ import { cosmic } from "@/cosmic/client";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 
-export default async function SingleProjectsPage({
-  params,
-}: {
-  params: { slug: string };
+export default async function SingleProjectsPage(props: {
+  params: Promise<{ slug: string }>;
 }) {
+  const params = await props.params;
   const { object: project } = await cosmic.objects
     .findOne({
       type: "projects",
