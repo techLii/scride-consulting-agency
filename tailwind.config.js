@@ -5,7 +5,6 @@ module.exports = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./cosmic/**/*.{ts,tsx,js,jsx}",
   ],
   darkMode: "class",
   theme: {
