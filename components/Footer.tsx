@@ -54,7 +54,7 @@ export default async function Footer() {
 
           {/* Social Media & Theme */}
           <div className="flex flex-col items-start md:items-end">
-            <h3 className="text-lg font-bold text-primary mb-4">Connect & Theme</h3>
+            <h3 className="text-lg font-bold text-primary mb-4">Check out our socials</h3>
             <div className="flex gap-4 mb-6">
               {[
                 { name: 'X', url: 'https://www.x.com/SCRIDE_CA', icon: 'twitter' },
